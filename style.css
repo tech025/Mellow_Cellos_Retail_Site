@@ -1,0 +1,385 @@
+h1 {
+  font-family: 'Young Serif', Times, serif;
+  font-size: 35px;
+  color: #c3553c;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+h2 {
+
+  font-size: 28px;
+  color: #c3553c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #c3553c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2, h3{
+  font-family: 'IBM Plex Serif', Times, serif;
+}
+
+li {
+  font-size: 18px;
+  color: #c3553c;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #fffaf4;
+  font-family: Arial, sans-serif;
+}
+
+
+html {
+  min-height: 100%;
+}
+
+#about {
+  position: relative;
+  top: 65px;
+  bottom: 25px;
+}
+
+.product-page-body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-catalog {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  flex: 1;
+}
+
+.product-catalog > .page-heading,
+.product-catalog > .page-description {
+  grid-column: 1 / -1;
+}
+
+p, figcaption {
+  font-family: 'IBM Plex Serif', Times, serif;
+  font-size: 18px;
+  color: #91532f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+ul {
+  padding: 24px 24px 24px 48px;
+  border-radius: 12px;
+  background-color: #f7eee3;
+}
+
+li {
+  font-family: 'IBM Plex Serif', Times, serif;
+  color: #c3553c;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 5px solid #9a422f;
+}
+
+.product-card, .checkout-orders {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  color: #cb6034;
+  border: 2px solid #9a422f;
+}
+
+.product-image {
+  width: 100%;
+}
+
+#three-quarter-size-cello-2-image {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn.btn-primary {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  border: 2px solid #91532f;
+  background-color: transparent;
+  color: #91532f;
+  font-family: 'IBM Plex Serif', Times, serif;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus-visible {
+  background-color: #91532f;
+  color: #fffaf4;
+}
+
+#adult_cellist {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+#student_with_teacher_1 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+#student_with_teacher_2 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  border: 2px solid #9a422f;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  background-color: #cb6034;
+  z-index: 1000;
+ 
+}
+
+.nav-options {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.cart-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fffaf4;
+  text-decoration: none;
+}
+
+.cart-link svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+
+
+.cart-link:hover,
+.cart-link:focus-visible {
+  color: #f7eee3;
+}
+
+.nav-options ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: none;
+}
+
+.nav-options li {
+  margin: 0;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown summary {
+  color: #fffaf4;
+  cursor: pointer;
+  font-family: 'IBM Plex Serif', Times, serif;
+  font-size: 18px;
+  list-style: none;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-options .dropdown-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  min-width: 190px;
+  margin: 0;
+  padding: 8px 0;
+  gap: 0;
+  align-items: stretch;
+  border: 1px solid #9a422f;
+  border-radius: 6px;
+  background-color: #cb6034;
+}
+
+.dropdown-menu li {
+  text-align: left;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus-visible {
+  background-color: #9a422f;
+}
+
+.nav-links {
+  color: #fffaf4;
+}
+
+.nav-links a {
+  color: #fffaf4;
+  text-decoration: none;
+}
+
+
+.site-footer {
+  width: 100%;
+  margin-top: 40px;
+  color: #fffaf4;
+  background-color: #cb6034;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 32px;
+}
+
+.footer-brand {
+  max-width: 320px;
+}
+
+.footer-logo {
+  color: #fffaf4;
+  font-family: 'Young Serif', Times, serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-brand p,
+.footer-bottom p {
+  margin: 12px 0 0;
+  color: #f7eee3;
+  text-align: left;
+}
+
+.footer-links {
+  display: flex;
+  gap: 56px;
+}
+
+.footer-links h2 {
+  margin: 0 0 12px;
+  color: #fffaf4;
+  font-size: 18px;
+  text-align: left;
+}
+
+.footer-links a {
+  display: block;
+  margin: 8px 0;
+  color: #f7eee3;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: #fffaf4;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  padding: 16px 32px;
+  border-top: 1px solid rgb(255 250 244 / 25%);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.page-description {
+  position: relative;
+  top: 30px;
+  bottom: 25px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 18px;
+  color: #91532f;
+  text-align: center;
+}
+
+.page-heading {
+  position: relative;
+  top: 62px;
+  display: block;
+
+  
+}
+
+.checkout-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 20px;
+  border:#91532f  2px solid;
+  padding: 20px 20px;
+}
+@media (max-width: 600px) {
+  .product-catalog {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-content,
+  .footer-links {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
